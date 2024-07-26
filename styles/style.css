@@ -115,6 +115,9 @@ main > section{
 }
 
 /* some facts styles */
+.section-title{
+    margin-bottom: 20px;
+}
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -127,7 +130,7 @@ main > section{
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    margin: 0px 43px;
 }
 .fact-number{
     font-size: 2.4rem;
@@ -144,7 +147,8 @@ main > section{
     font-size: 0.86rem;
     font-weight: 400;
     max-width: 467px;
-    margin-top: 24px ;
+    margin: 24px 0px 86px 0px;
+
 }
 /* responsive media query */
 /* small device */
