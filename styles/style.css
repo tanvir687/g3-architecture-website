@@ -128,14 +128,30 @@ main > section{
     border-radius: 8px;
 }
 .feature-image img{
-    width: 610px;
-    height: 850px;
+    width: 100%;
 }
 .feature-card .feature-title{
     font-weight: 600;
     font-size: 1.07rem;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+#experience-badge{
+    height: 172px;
+    width: 295px;
+    padding: 38px 35px;
+    margin-left: -80px;
+    margin-top: -66px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #FFFFFF;
+}
+.experience-text{
+    font-weight: 500;
+    font-size: 1.34rem;
+    color: #FFFFFF;
 }
 /* some facts styles */
 .section-title{
@@ -201,6 +217,7 @@ main > section{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links,
+    .features,
     .teams{
         flex-direction: column;
     }
@@ -222,10 +239,15 @@ main > section{
         margin-left: 20px ;
         margin-right: 10px ;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 60px;
+    }
 }
 /* medium size device media query */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams, 
+    .features{
         flex-direction: column;
     }
     .our-features{
@@ -235,5 +257,9 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+    #experience-badge{
+        margin-left: 35%;
+        margin-top: 20px;
     }
 }
